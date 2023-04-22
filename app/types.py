@@ -1,4 +1,4 @@
-from typing import List, TypedDict
+from typing import List, TypedDict, Union
 
 
 class Service(TypedDict):
@@ -7,7 +7,7 @@ class Service(TypedDict):
     type: str
     startAt: str
     finishAt: str
-    price: float
+    price: Union[int, float]
     paid: bool
     currency: str
     customer: str

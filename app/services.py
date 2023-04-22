@@ -3,6 +3,7 @@ import json
 
 
 def read_services() -> ServiceList:
+    # Read services from json file
     with open("res/services.json", "r") as f:
         service_list = json.load(f)
     return service_list
